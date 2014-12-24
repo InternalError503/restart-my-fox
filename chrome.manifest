@@ -17,6 +17,7 @@ locale R-M-F it chrome/locale/it/
 locale R-M-F ja chrome/locale/ja/
 locale R-M-F pl chrome/locale/pl/
 locale R-M-F pt-br chrome/locale/pt-br/
+locale R-M-F nl chrome/locale/nl/
 locale R-M-F ro chrome/locale/ro/
 locale R-M-F ru chrome/locale/ru/
 locale R-M-F tr chrome/locale/tr/
