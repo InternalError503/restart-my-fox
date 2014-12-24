@@ -15,11 +15,6 @@ Copyright (c) 2014 8pecxstudios.com
 <script src="chrome://R-M-F/content/overlay.js"/>
 
 	<menupopup id="appmenuPrimaryPane">
-	<!--
-Kris Maglione: Your add-on creates DOM nodes with the following non-namespaced IDs, which could cause compatibility problems with other add-ons. Please consistently prefix your DOM IDs with a distinct string which is unique to and indicative of your add-on:
-
-	menu_restartBrowser >> Done there should be no chance of DOM ID conflict.
-	-->	
 		<menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
