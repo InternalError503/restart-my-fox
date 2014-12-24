@@ -1,5 +1,5 @@
-// Copyright (c) 2013 8pecxstudios \\
-// Use of this code is strictly by permissions only even tho its very simple code. \\
+// Copyright (c) 2014 8pecxstudios.com \\
+// Use of Restart My Fox code is strictly by permissions only even tho its very simple code. \\
 
 var RestartMyFox = {
 	

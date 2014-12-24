@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <!-- 
-Copyright (c) 2013 8pecxstudios
-This addon is designed for temporary use as its been integrated into cyberfox release.
-Use of this code is strictly by permissions only even tho its very simple code.
+Copyright (c) 2014 8pecxstudios.com
+Use of Restart My Fox code is strictly by permissions only even tho its very simple code.
 -->
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>Restart-My-Fox@8pecxstudios.com</em:id>
-    <em:version>1.0.1</em:version>
+    <em:version>1.0.2</em:version>
 	<em:type>2</em:type>
 	<em:iconURL>chrome://R-M-F/skin/icon32.png</em:iconURL>
 	<em:icon64URL>chrome://R-M-F/skin/icon64.png</em:icon64URL>
@@ -20,7 +19,7 @@ Use of this code is strictly by permissions only even tho its very simple code.
       <Description>
 		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>22.0.*</em:minVersion>
-        <em:maxVersion>27.0.*</em:maxVersion>
+        <em:maxVersion>28.0.*</em:maxVersion><!-- Max Version That Supports AppMenu -->
       </Description>
     </em:targetApplication>
 	
@@ -30,5 +29,8 @@ Use of this code is strictly by permissions only even tho its very simple code.
 	
     <em:creator>8pecxstudios</em:creator>
     <em:homepageURL>https://8pecxstudios.com/</em:homepageURL>
+	<!-- Special Thanks List -->
+	<em:contributor>zauber600 (de (German))</em:contributor>
+	<em:contributor>Michel Gagnon (fr (French))</em:contributor>		
   </Description>      
 </RDF>
