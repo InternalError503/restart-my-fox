@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <!-- 
 Copyright (c) 2014 8pecxstudios.com
-Use of Restart My Fox code is strictly by permissions only even when its very simple code.
+Use of restart my fox code is strictly by permissions only even when its very simple code.
 -->
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>Restart-My-Fox@8pecxstudios.com</em:id>
-    <em:version>1.0.3</em:version>
+    <em:version>1.0.4</em:version>
 	<em:type>2</em:type>
 	<em:iconURL>chrome://R-M-F/skin/icon32.png</em:iconURL>
 	<em:icon64URL>chrome://R-M-F/skin/icon64.png</em:icon64URL>
@@ -19,7 +19,7 @@ Use of Restart My Fox code is strictly by permissions only even when its very si
       <Description>
 		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>22.0.*</em:minVersion>
-        <em:maxVersion>29.0.*</em:maxVersion><!-- Max Version That Supports AppMenu 28.0-->
+        <em:maxVersion>30.*</em:maxVersion><!-- Max Version That Supports AppMenu 28.0-->
       </Description>
     </em:targetApplication>
 	
@@ -32,6 +32,7 @@ Use of Restart My Fox code is strictly by permissions only even when its very si
 	<!-- Special Thanks List -->
 	<em:translator>zauber600 (de (German))</em:translator>
 	<em:translator>Michel Gagnon (fr (French))</em:translator>		
-	<em:translator>はりを (ja (Japanese))</em:translator>		
+	<em:translator>はりを (ja (Japanese))</em:translator>	
+	<em:translator>Bekir Uçarci (tr (Turkish))</em:translator>	
   </Description>      
 </RDF>

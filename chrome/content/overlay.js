@@ -1,5 +1,5 @@
 // Copyright (c) 2014 8pecxstudios.com \\
-// Use of Restart My Fox code is strictly by permissions only even when its very simple code. \\
+// use of restart my fox code is strictly by permissions only even when its very simple code. \\
 
 var RestartMyFox = {
 	

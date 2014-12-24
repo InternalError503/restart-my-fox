@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+<?xml-stylesheet href="chrome://R-M-F/skin/RMFStyle.css" type="text/css"?>
 <!-- 
 Copyright (c) 2014 8pecxstudios.com
-Use of Restart My Fox code is strictly by permissions only even when its very simple code.
+use of restart my fox code is strictly by permissions only even when its very simple code.
 -->
+
 <!DOCTYPE overlay [
 <!ENTITY % commonDTD SYSTEM "chrome://R-M-F/locale/RMFlocale.dtd">
 %commonDTD;
@@ -16,7 +19,6 @@ Use of Restart My Fox code is strictly by permissions only even when its very si
 		<menuitem id="appmenu_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
-					image="chrome://R-M-F/skin/icon16.png"
 					label="&restartMyFox.label;" 
 					oncommand="RestartMyFox.restartBrowser();" insertafter="appmenu_newPrivateWindow"/>	
 	</menupopup>	
@@ -25,19 +27,17 @@ Use of Restart My Fox code is strictly by permissions only even when its very si
 		<menuitem id="menu_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
-					image="chrome://R-M-F/skin/icon16.png"
 					label="&restartMyFox.label;" 
 					oncommand="RestartMyFox.restartBrowser();" insertafter="menu_newPrivateWindow"/>
 	</menupopup>
 	
 	<!--
-	Allow Toolbar Button, Due To Removal Of AppMenu In Australis, Keeping Legacy Code For Appmenu, For Legacy Support!
+	Allow tool-bar button, due to removal of app-menu in australis, keeping legacy code for app-menu, for legacy support!
 	-->
 	<toolbarpalette id="BrowserToolbarPalette">
-        <toolbarbutton id="toolbar_SrestartBrowser" 
-					   class="toolbarbutton-1 chromeclass-toolbar-additional"
+        <toolbarbutton id="toolbar_restartBrowser" 
+					   class="toolbarbutton-1 chromeclass-toolbar-additional "
 					   label="&restartMyFox.label;"	
-					   image="chrome://R-M-F/skin/icon16.png"
 					   tooltiptext="&restartMyFox.label;"  
                        oncommand="RestartMyFox.restartBrowser();">
         </toolbarbutton>
