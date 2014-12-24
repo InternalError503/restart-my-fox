@@ -7,7 +7,7 @@ Copyright (c) 2014 8pecxstudios
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>Restart-My-Fox@8pecxstudios.com</em:id>
-    <em:version>1.0.6</em:version>
+    <em:version>1.0.7</em:version>
 	<em:type>2</em:type>
 	<em:iconURL>chrome://R-M-F/skin/icon32.png</em:iconURL>
 	<em:icon64URL>chrome://R-M-F/skin/icon64.png</em:icon64URL>
@@ -18,7 +18,7 @@ Copyright (c) 2014 8pecxstudios
       <Description>
 		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>22.0.*</em:minVersion>
-        <em:maxVersion>33.*</em:maxVersion><!-- Max Version That Supports AppMenu 28.0-->
+        <em:maxVersion>35.*</em:maxVersion><!-- Max Version That Supports AppMenu 28.0-->
       </Description>
     </em:targetApplication>
 	

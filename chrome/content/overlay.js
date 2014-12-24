@@ -10,7 +10,7 @@ var RestartMyFox = {
 	
 			}catch (e){
 				//Catch any nasty errors and output to dialogue message
-				alert("An error was encountered while attempting to restart browser! " + e);					
+				alert("Were sorry, Something has gone wrong while attempting to restart browser! " + e);					
 		}
         
 	}	
