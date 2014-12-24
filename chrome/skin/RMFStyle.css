@@ -1,28 +1,27 @@
 /*
  * Copyright (c) 2014 8pecxstudios.com
- * use of restart my fox code is strictly by permissions only even when its very simple code.
  */
 
-#appmenu_restartBrowser{
+#appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
 
-#menu_restartBrowser{
+#menu_948622EF9DD31D8EC28360C72957C429_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
 
-#toolbar_restartBrowser{
+#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
-#toolbar_restartBrowser[cui-areatype="menu-panel"]{
+#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser[cui-areatype="menu-panel"]{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 72px 32px 40px);
 }
 
-#toolbar_restartBrowser:not([cui-areatype="toolbar"])> .toolbarbutton-icon{
+#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([cui-areatype="toolbar"])> .toolbarbutton-icon{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 72px 32px 40px);
 }

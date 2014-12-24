@@ -3,7 +3,6 @@
 <?xml-stylesheet href="chrome://R-M-F/skin/RMFStyle.css" type="text/css"?>
 <!-- 
 Copyright (c) 2014 8pecxstudios.com
-use of restart my fox code is strictly by permissions only even when its very simple code.
 -->
 
 <!DOCTYPE overlay [
@@ -16,7 +15,12 @@ use of restart my fox code is strictly by permissions only even when its very si
 <script src="chrome://R-M-F/content/overlay.js"/>
 
 	<menupopup id="appmenuPrimaryPane">
-		<menuitem id="appmenu_restartBrowser"
+	<!--
+Kris Maglione: Your add-on creates DOM nodes with the following non-namespaced IDs, which could cause compatibility problems with other add-ons. Please consistently prefix your DOM IDs with a distinct string which is unique to and indicative of your add-on:
+
+	menu_restartBrowser >> Done there should be no chance of DOM ID conflict.
+	-->	
+		<menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;" 
@@ -24,7 +28,7 @@ use of restart my fox code is strictly by permissions only even when its very si
 	</menupopup>	
 	
 		<menupopup id="menu_FilePopup">
-		<menuitem id="menu_restartBrowser"
+		<menuitem id="menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;" 
@@ -35,7 +39,7 @@ use of restart my fox code is strictly by permissions only even when its very si
 	Allow tool-bar button, due to removal of app-menu in australis, keeping legacy code for app-menu, for legacy support!
 	-->
 	<toolbarpalette id="BrowserToolbarPalette">
-        <toolbarbutton id="toolbar_restartBrowser" 
+        <toolbarbutton id="toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser" 
 					   class="toolbarbutton-1 chromeclass-toolbar-additional "
 					   label="&restartMyFox.label;"	
 					   tooltiptext="&restartMyFox.label;"  
