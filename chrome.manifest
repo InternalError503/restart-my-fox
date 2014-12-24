@@ -1,0 +1,9 @@
+content R-M-F chrome/content/
+skin R-M-F classic/1.0 chrome/skin/
+overlay chrome://browser/content/browser.xul chrome://R-M-F/content/R-M-F.xul
+
+#Current Support Locales For Restart My Fox
+locale R-M-F de chrome/locale/de/
+locale R-M-F en-US chrome/locale/en-US/
+locale R-M-F fr chrome/locale/fr/
+locale R-M-F ru chrome/locale/ru/

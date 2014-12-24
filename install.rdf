@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- 
+Copyright (c) 2013 8pecxstudios
+This addon is designed for temporary use as its been integrated into cyberfox release.
+Use of this code is strictly by permissions only even tho its very simple code.
+-->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>Restart-My-Fox@8pecxstudios.com</em:id>
+    <em:version>1.0.1</em:version>
+	<em:type>2</em:type>
+	<em:iconURL>chrome://R-M-F/skin/icon32.png</em:iconURL>
+	<em:icon64URL>chrome://R-M-F/skin/icon64.png</em:icon64URL>
+    <!-- Target Application this theme can install into, 
+        with minimum and maximum supported versions. --> 
+		
+    <em:targetApplication>
+      <Description>
+		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>22.0.*</em:minVersion>
+        <em:maxVersion>27.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+	
+	<!-- Front End MetaData -->
+    <em:name>Restart My Fox</em:name>
+    <em:description>Adds to appMenu or ToolsMenu the Restart Browser menu item that allows users to easily restart the web browser without losing current open pages.</em:description>
+	
+    <em:creator>8pecxstudios</em:creator>
+    <em:homepageURL>https://8pecxstudios.com/</em:homepageURL>
+  </Description>      
+</RDF>

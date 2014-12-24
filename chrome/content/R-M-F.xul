@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- 
+Copyright (c) 2013 8pecxstudios
+Use of this code is strictly by permissions only even tho its very simple code.
+-->
+<!DOCTYPE overlay [
+<!ENTITY % commonDTD SYSTEM "chrome://R-M-F/locale/RMFlocale.dtd">
+%commonDTD;
+]>
+
+<overlay id="RestartMyFox"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="chrome://R-M-F/content/overlay.js"/>
+
+	<menupopup id="appmenuPrimaryPane">
+		<menuitem id="appmenu_restartBrowser"
+					iconic="true"
+					class="menuitem-iconic"
+					image="chrome://R-M-F/skin/icon16.png"
+					label="&restartMyFox.label;" 
+					oncommand="RestartMyFox.restartBrowser();" insertafter="appmenu_newPrivateWindow"/>	
+	</menupopup>	
+	
+		<menupopup id="menu_FilePopup">
+		<menuitem id="menu_restartBrowser"
+					iconic="true"
+					class="menuitem-iconic"
+					image="chrome://R-M-F/skin/icon16.png"
+					label="&restartMyFox.label;" 
+					oncommand="RestartMyFox.restartBrowser();" insertafter="menu_newPrivateWindow"/>
+	</menupopup>
+</overlay>
