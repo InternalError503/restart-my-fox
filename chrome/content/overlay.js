@@ -1,30 +1,30 @@
 // Copyright (c) 2014 8pecxstudios.com \\
-// Use of Restart My Fox code is strictly by permissions only even tho its very simple code. \\
+// Use of Restart My Fox code is strictly by permissions only even when its very simple code. \\
 
 var RestartMyFox = {
 	
 	restartBrowser: function() {	
 
 		try{
-			const nsIAppStartup = Ci.nsIAppStartup;
-				var nsIObSer = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
-				var QuitThis = Cc["@mozilla.org/supports-PRBool;1"].createInstance(Ci.nsISupportsPRBool);
-			nsIObSer.notifyObservers(QuitThis, "quit-application-requested", null);
+			const Omega = Ci.nsIAppStartup;
+				var Alpha = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
+				var Zeus = Cc["@mozilla.org/supports-PRBool;1"].createInstance(Ci.nsISupportsPRBool);
+			Alpha.notifyObservers(Zeus, "quit-application-requested", null);
    
-			if (QuitThis.data)
+			if (Zeus.data)
 				return;
 				
-			nsIObSer.notifyObservers(null, "quit-application-granted", null);
+			Alpha.notifyObservers(null, "quit-application-granted", null);
 			
-				var windowMed = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.nsIWindowMediator);
-				var gEnum = windowMed.getEnumerator(null);
+				var pegasus = Cc["@mozilla.org/appshell/window-mediator;1"].getService(Ci.nsIWindowMediator);
+				var Argos = pegasus.getEnumerator(null);
 				
-			while (gEnum.hasMoreElements()) {
-				var RX7 = gEnum.getNext();
-			if (("tryToClose" in RX7) && !RX7.tryToClose())
+			while (Argos.hasMoreElements()) {
+				var MazdaRX7 = Argos.getNext();
+			if (("tryToClose" in MazdaRX7) && !MazdaRX7.tryToClose())
 				return;
     }
-    Cc["@mozilla.org/toolkit/app-startup;1"].getService(nsIAppStartup).quit(nsIAppStartup.eRestart | nsIAppStartup.eAttemptQuit);
+    Cc["@mozilla.org/toolkit/app-startup;1"].getService(Omega).quit(Omega.eRestart | Omega.eAttemptQuit);
 	
 			}catch (e){
 				//Catch any nasty errors and output to dialogue and console

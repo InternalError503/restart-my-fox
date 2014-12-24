@@ -6,4 +6,5 @@ overlay chrome://browser/content/browser.xul chrome://R-M-F/content/R-M-F.xul
 locale R-M-F de chrome/locale/de/
 locale R-M-F en-US chrome/locale/en-US/
 locale R-M-F fr chrome/locale/fr/
+locale R-M-F ja chrome/locale/ja/
 locale R-M-F ru chrome/locale/ru/

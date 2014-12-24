@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- 
 Copyright (c) 2014 8pecxstudios.com
-Use of Restart My Fox code is strictly by permissions only even tho its very simple code.
+Use of Restart My Fox code is strictly by permissions only even when its very simple code.
 -->
 <!DOCTYPE overlay [
 <!ENTITY % commonDTD SYSTEM "chrome://R-M-F/locale/RMFlocale.dtd">
@@ -29,4 +29,19 @@ Use of Restart My Fox code is strictly by permissions only even tho its very sim
 					label="&restartMyFox.label;" 
 					oncommand="RestartMyFox.restartBrowser();" insertafter="menu_newPrivateWindow"/>
 	</menupopup>
+	
+	<!--
+	Allow Toolbar Button, Due To Removal Of AppMenu In Australis, Keeping Legacy Code For Appmenu, For Legacy Support!
+	-->
+	<toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="toolbar_SrestartBrowser" 
+					   class="toolbarbutton-1 chromeclass-toolbar-additional"
+					   label="&restartMyFox.label;"	
+					   image="chrome://R-M-F/skin/icon16.png"
+					   tooltiptext="&restartMyFox.label;"  
+                       oncommand="RestartMyFox.restartBrowser();">
+        </toolbarbutton>
+    </toolbarpalette>	
+	
+	
 </overlay>
