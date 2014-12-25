@@ -9,8 +9,8 @@ var RestartMyFox = {
 			Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
 	
 			}catch (e){
-				//Catch any nasty errors and output to console.
-				console.log("Were sorry, Something has gone wrong while attempting to restart browser! " + e);					
+				//Catch any nasty errors and output to dialogue.
+				alert("Were sorry, Something has gone wrong while attempting to restart browser! " + e);					
 		}
         
 	}	
