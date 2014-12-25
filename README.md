@@ -1,4 +1,4 @@
-restart-my-fox
+Restart My Fox
 ==============
 
 Download this addon from [addons.mozilla.org] (https://addons.mozilla.org/en-US/firefox/addon/restart-my-fox)
@@ -20,4 +20,4 @@ users to easily restart the web browser without losing current open pages.
 
 Allows you to clear the browsers fast restart cache.
 
-Also available for Google chrome in [Chrome web store] https://chrome.google.com/webstore/detail/restart-my-chrome/poifblphedfakpplnemomhgkhhpkpkla
+Also available for Google chrome in [Chrome web store] (https://chrome.google.com/webstore/detail/restart-my-chrome/poifblphedfakpplnemomhgkhhpkpkla)
