@@ -1,4 +1,2 @@
 <!ENTITY restartMyFox.label "ブラウザを再起動">
-
-
-
+<!ENTITY rmf_fastrestartcache.label "Clear fast restart cache on browser restart.">

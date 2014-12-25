@@ -1,4 +1,2 @@
 <!ENTITY restartMyFox.label "Restart Prohlížeče">
-
-
-
+<!ENTITY rmf_fastrestartcache.label "Clear fast restart cache on browser restart.">

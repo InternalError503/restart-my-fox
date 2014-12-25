@@ -28,6 +28,9 @@ Copyright (c) 2014 8pecxstudios
 	
     <em:creator>8pecxstudios</em:creator>
     <em:homepageURL>https://8pecxstudios.com/</em:homepageURL>
+	<em:optionsType>1</em:optionsType>
+	<em:optionsURL>chrome://R-M-F/content/RMF_options.xul</em:optionsURL>	
+	
 	<!-- Special Thanks List -->
 	<em:translator>zauber600 (de (German))</em:translator>
 	<em:translator>Michel Gagnon (fr (French))</em:translator>		
