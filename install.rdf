@@ -7,7 +7,7 @@ Copyright (c) 2014 8pecxstudios
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>Restart-My-Fox@8pecxstudios.com</em:id>
-    <em:version>1.0.8</em:version>
+    <em:version>1.0.9</em:version>
 	<em:type>2</em:type>
 	<em:iconURL>chrome://R-M-F/skin/icon32.png</em:iconURL>
 	<em:icon64URL>chrome://R-M-F/skin/icon64.png</em:icon64URL>

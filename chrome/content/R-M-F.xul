@@ -19,7 +19,7 @@ Copyright (c) 2014 8pecxstudios.com
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;" 
-					oncommand="RestartMyFox.restartBrowser();" insertafter="appmenu_newPrivateWindow"/>	
+					oncommand="RestartMyFox.restartBrowser();" insertbefore="appmenu-quit"/>	
 	</menupopup>	
 	
 		<menupopup id="menu_FilePopup">
@@ -27,7 +27,7 @@ Copyright (c) 2014 8pecxstudios.com
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;" 
-					oncommand="RestartMyFox.restartBrowser();" insertafter="menu_newPrivateWindow"/>
+					oncommand="RestartMyFox.restartBrowser();" insertbefore="menu_FileQuitItem"/>
 	</menupopup>
 	
 	<!--
