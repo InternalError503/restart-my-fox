@@ -18,7 +18,7 @@ Copyright (c) 2014 8pecxstudios.com
 		<menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
-					label="&restartMyFox.label;" 
+					label="&restartMyFox.label;"			
 					oncommand="RestartMyFox.restartBrowser();" insertbefore="appmenu-quit"/>	
 	</menupopup>	
 	
@@ -26,7 +26,8 @@ Copyright (c) 2014 8pecxstudios.com
 		<menuitem id="menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
-					label="&restartMyFox.label;" 
+					label="&restartMyFox.label;"
+					accesskey="&restartMyFox.accesskey;"					
 					oncommand="RestartMyFox.restartBrowser();" insertbefore="menu_FileQuitItem"/>
 	</menupopup>
 	
@@ -37,7 +38,7 @@ Copyright (c) 2014 8pecxstudios.com
         <toolbarbutton id="toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser" 
 					   class="toolbarbutton-1 chromeclass-toolbar-additional "
 					   label="&restartMyFox.label;"	
-					   tooltiptext="&restartMyFox.label;"  
+					   tooltiptext="&restartMyFox.label;"					   
                        oncommand="RestartMyFox.restartBrowser();">
         </toolbarbutton>
     </toolbarpalette>	
