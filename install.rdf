@@ -24,18 +24,126 @@ Copyright (c) 2014 8pecxstudios
 	
 	<!-- Front End MetaData -->
     <em:name>Restart My Fox</em:name>
-    <em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, The restart browser menu item or Button that allows users to easily restart the web browser without losing current open pages.</em:description>
+    <em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
 	
     <em:creator>8pecxstudios</em:creator>
     <em:homepageURL>https://8pecxstudios.com/</em:homepageURL>
 	<em:optionsType>1</em:optionsType>
 	<em:optionsURL>chrome://R-M-F/content/RMF_options.xul</em:optionsURL>	
 	
-	<!-- Special Thanks List -->
-	<em:translator>zauber600 (de (German))</em:translator>
-	<em:translator>Michel Gagnon (fr (French))</em:translator>		
-	<em:translator>はりを (ja (Japanese))</em:translator>	
-	<em:translator>Rocco (nl (Dutch))</em:translator>	
-	<em:translator>Bekir Uçarci (tr (Turkish))</em:translator>	
+    <!-- Localizations -->
+    <em:localized>
+      <Description>
+	<em:locale>ar</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>bg</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>cs</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>da</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>de</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+	<em:translator>zauber600 (German)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>el</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>es-ES</em:locale>
+	<em:description>Añade al menú de la aplicación (clásico), o al menú de herramientas, o a la barra de herramientas, el elemento de menú 'Reiniciar navegador' o un botón que permite a los usuarios reiniciar fácilmente el navegador web sin perder las páginas actualmente abiertas.</em:description>
+	  </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>fr</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+        <em:translator>Michel Gagnon (French)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>gr</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>it</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>ja</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+	<em:translator>はりを (Japanese)</em:translator>	
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>nl</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+	<em:translator>Rocco (Dutch)</em:translator>
+      </Description>
+	</em:localized>
+	<em:localized>
+      <Description>
+	<em:locale>pl</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>pt-br</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>ro</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>ru</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>tr</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+	<em:translator>Bekir Uçarci (Turkish)</em:translator>	
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+	<em:locale>zh-tw</em:locale>
+	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+      </Description>
+    </em:localized>	
   </Description>      
 </RDF>
