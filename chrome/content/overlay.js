@@ -1,16 +1,15 @@
 // Copyright (c) 2014 8pecxstudios.com 
 
 Cu.import("resource://gre/modules/Services.jsm");
+Services.prefs.QueryInterface(Ci.nsIPrefBranch);
 
 var RestartMyFox = {
 	
 	restartBrowser: function() {	
 
 		try{
-		
-				var RestartMyFoxPrefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getBranch("extensions.restart_my_fox.");
-				
-				if (RestartMyFoxPrefs.getBoolPref("purgecache")){
+						
+				if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
 				
 					Services.appinfo.invalidateCachesOnRestart();
 					Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
