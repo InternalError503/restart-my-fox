@@ -46,20 +46,31 @@ var RestartMyFox = {
 
 		try{
 				
-			if (this.Prompter.confirm(null, this.RMFBundle.formatStringFromName("dialogue.title", [this.Branding], 1), 
-				this.RMFBundle.formatStringFromName("dialogue.message", [this.Branding], 1))){
-				
-					if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
+			if (Services.prefs.getBoolPref("extensions.restart_my_fox.requireconfirm")){	
+				if (this.Prompter.confirm(null, this.RMFBundle.formatStringFromName("dialogue.title", [this.Branding], 1), 
+					this.RMFBundle.formatStringFromName("dialogue.message", [this.Branding], 1))){
 					
-						Services.appinfo.invalidateCachesOnRestart();
-						Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+						if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
 						
-					}else{
+							Services.appinfo.invalidateCachesOnRestart();
+							Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+							
+						}else{
+						
+							Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+						}
+				}
+			}else{
+				if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
 					
-						Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
-					}
+					Services.appinfo.invalidateCachesOnRestart();
+					Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+						
+				}else{
+					
+					Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+				}
 			}
-			
 			}catch (e){
 				//Catch any nasty errors and output to dialogue.
 				alert("Were sorry, Something has gone wrong while attempting to restart browser! " + e);					
