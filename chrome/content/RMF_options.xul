@@ -23,7 +23,10 @@
 								 type="bool"/>		
 			<preference id="extensions.restart_my_fox.menubarbutton" 
 								 name="extensions.restart_my_fox.menubarbutton" 
-								 type="bool"/>								 
+								 type="bool"/>
+			<preference id="extensions.restart_my_fox.requireconfirm" 
+								 name="extensions.restart_my_fox.requireconfirm" 
+								 type="bool"/>								 							 
 		</preferences>
 			<groupbox flex="1">
 				<caption label="&rmf_cachecaption.label;"/>
@@ -36,6 +39,11 @@
 							   preference="extensions.restart_my_fox.paneluibutton"/>
 			<checkbox id="extensions.restart_my_fox.menubarbutton" label="&rmf_menubarbtn.label;"
 							   preference="extensions.restart_my_fox.menubarbutton"/>
+			</groupbox>
+			<groupbox flex="1">
+				<caption label="&rmf_confirmationcaption.label;"/>
+				<checkbox id="extensions.restart_my_fox.requireconfirm" label="&rmf_reqconfirmation.label;"
+								   preference="extensions.restart_my_fox.requireconfirm"/>
 			</groupbox>				
 	</prefpane>
 	
