@@ -28,6 +28,11 @@
 	-moz-image-region: rect(0px 72px 32px 40px);
 }
 
+#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser:hover{
+	list-style-image: url("chrome://R-M-F/skin/icon16h.png");
+  -moz-transition-duration: 0.8s;	
+}
+
 /*Menu Panel*/
 
 #toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser[cui-areatype="menu-panel"]{
@@ -57,7 +62,8 @@
   -moz-margin-end: 0;
  } 
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([disabled]):hover {
-  -moz-transform:rotate(90deg);
+#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:hover {
+	list-style-image: url("chrome://R-M-F/skin/icon32h.png");
+  -moz-image-region: rect(0px 32px 32px 0px);
   -moz-transition-duration: 0.8s;
 }
