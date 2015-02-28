@@ -1,3 +1,6 @@
 <!ENTITY restartMyFox.label "Επανεκκίνηση Browser">
 <!ENTITY rmf_fastrestartcache.label "Clear fast restart cache on browser restart.">
 <!ENTITY restartMyFox.accesskey "R">
+<!ENTITY rmf_cachecaption.label "Cache">
+<!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
+<!ENTITY rmf_paneluibtn.label "Add button to PanelUI">

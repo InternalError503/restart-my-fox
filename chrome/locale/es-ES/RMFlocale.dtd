@@ -1,3 +1,6 @@
 <!ENTITY restartMyFox.label "Reiniciar navegador">
 <!ENTITY rmf_fastrestartcache.label "Limpiar caché de reinicio rápido al reiniciar el navegador.">
 <!ENTITY restartMyFox.accesskey "R">
+<!ENTITY rmf_cachecaption.label "Cache">
+<!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
+<!ENTITY rmf_paneluibtn.label "Add button to PanelUI">

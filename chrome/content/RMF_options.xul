@@ -18,11 +18,20 @@
 			<preference id="extensions.restart_my_fox.purgecache" 
 								 name="extensions.restart_my_fox.purgecache" 
 								 type="bool"/>	
+			<preference id="extensions.restart_my_fox.paneluibutton" 
+								 name="extensions.restart_my_fox.paneluibutton" 
+								 type="bool"/>									 
 		</preferences>
-
-			<checkbox id="extensions.restart_my_fox.purgecache" label="&rmf_fastrestartcache.label;"
-							   preference="extensions.restart_my_fox.purgecache"/>	
-					   
+			<groupbox flex="1">
+				<caption label="&rmf_cachecaption.label;"/>
+				<checkbox id="extensions.restart_my_fox.purgecache" label="&rmf_fastrestartcache.label;"
+								   preference="extensions.restart_my_fox.purgecache"/>
+			</groupbox>	
+			<groupbox flex="1">
+			<caption label="&rmf_btnsmenusaption.label;"/>
+			<checkbox id="extensions.restart_my_fox.paneluibutton" label="&rmf_paneluibtn.label;"
+							   preference="extensions.restart_my_fox.paneluibutton"/>	
+			</groupbox>				
 	</prefpane>
 	
 </prefwindow>
