@@ -33,6 +33,16 @@
 					oncommand="RestartMyFox.restartBrowser();" insertbefore="menu_FileQuitItem"/>
 	</menupopup>
 	
+	<!-- Add RMF to Austalis menu panel next to quit button -->
+	<panel id="PanelUI-footer-inner">
+		<toolbarbutton id="panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+					label="&restartMyFox.label;"
+					oncommand="RestartMyFox.restartBrowser();"
+					insertbefore="PanelUI-quit"
+				    tooltiptext="&restartMyFox.label;"/>
+		<toolbarseparator insertbefore="PanelUI-quit"/>
+	</panel>
+	
 	<!--
 	Allow tool-bar button, due to removal of app-menu in australis, keeping legacy code for app-menu, for legacy support!
 	-->
