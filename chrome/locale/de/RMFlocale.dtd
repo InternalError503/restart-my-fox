@@ -3,5 +3,7 @@
 <!ENTITY restartMyFox.accesskey "R">
 <!ENTITY rmf_cachecaption.label "Cache">
 <!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
+<!ENTITY rmf_confirmationcaption.label "Restart Confirmation">
 <!ENTITY rmf_paneluibtn.label "Add button to PanelUI">
 <!ENTITY rmf_menubarbtn.label "Add to File menu.">
+<!ENTITY rmf_reqconfirmation.label "Require restart confirmation.">
