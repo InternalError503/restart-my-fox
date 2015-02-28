@@ -20,7 +20,10 @@
 								 type="bool"/>	
 			<preference id="extensions.restart_my_fox.paneluibutton" 
 								 name="extensions.restart_my_fox.paneluibutton" 
-								 type="bool"/>									 
+								 type="bool"/>		
+			<preference id="extensions.restart_my_fox.menubarbutton" 
+								 name="extensions.restart_my_fox.menubarbutton" 
+								 type="bool"/>								 
 		</preferences>
 			<groupbox flex="1">
 				<caption label="&rmf_cachecaption.label;"/>
@@ -30,7 +33,9 @@
 			<groupbox flex="1">
 			<caption label="&rmf_btnsmenusaption.label;"/>
 			<checkbox id="extensions.restart_my_fox.paneluibutton" label="&rmf_paneluibtn.label;"
-							   preference="extensions.restart_my_fox.paneluibutton"/>	
+							   preference="extensions.restart_my_fox.paneluibutton"/>
+			<checkbox id="extensions.restart_my_fox.menubarbutton" label="&rmf_menubarbtn.label;"
+							   preference="extensions.restart_my_fox.menubarbutton"/>
 			</groupbox>				
 	</prefpane>
 	

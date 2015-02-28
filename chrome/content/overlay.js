@@ -17,7 +17,14 @@ var RestartMyFox = {
 						document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = false;		
 					}
 				});
-												
+				
+				 document.getElementById("toolbar-menubar").addEventListener("popupshowing", function (e) {					 
+					if (!Services.prefs.getBoolPref("extensions.restart_my_fox.menubarbutton")){					
+						document.getElementById("menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = true;
+					}else{
+						document.getElementById("menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = false;					
+					}
+				});				
 		}catch (e){}	
 			
 	},

@@ -4,3 +4,4 @@
 <!ENTITY rmf_cachecaption.label "Cache">
 <!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
 <!ENTITY rmf_paneluibtn.label "Add button to PanelUI">
+<!ENTITY rmf_menubarbtn.label "Add to File menu.">
