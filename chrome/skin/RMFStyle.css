@@ -62,8 +62,12 @@
   -moz-margin-end: 0;
  } 
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:hover {
+#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([disabled]):hover {
 	list-style-image: url("chrome://R-M-F/skin/icon32h.png");
   -moz-image-region: rect(0px 32px 32px 0px);
   -moz-transition-duration: 0.8s;
+}
+
+#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser[disabled] {
+  opacity: 0.5;
 }

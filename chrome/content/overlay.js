@@ -28,7 +28,16 @@ var RestartMyFox = {
 					}else{
 						document.getElementById("menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = false;					
 					}
-				});				
+				});
+
+					window.addEventListener("beforecustomization", function (e) {
+						document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").setAttribute('disabled', true);
+					}, false);
+					
+					window.addEventListener("aftercustomization", function (e) {
+						document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('disabled');
+					}, false);
+					
 		}catch (e){}	
 			
 	},
