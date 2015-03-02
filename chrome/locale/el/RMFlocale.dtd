@@ -7,3 +7,4 @@
 <!ENTITY rmf_paneluibtn.label "Add button to PanelUI">
 <!ENTITY rmf_menubarbtn.label "Add to File menu.">
 <!ENTITY rmf_reqconfirmation.label "Require restart confirmation.">
+<!ENTITY rmf_panelbtnsmall.label "Use small button on panel UI.">

@@ -30,7 +30,7 @@
 
 #toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser:hover{
 	list-style-image: url("chrome://R-M-F/skin/icon16h.png");
-  -moz-transition-duration: 0.8s;	
+	-moz-transition-duration: 0.8s;	
 }
 
 /*Menu Panel*/
@@ -64,10 +64,22 @@
 
 #panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([disabled]):hover {
 	list-style-image: url("chrome://R-M-F/skin/icon32h.png");
-  -moz-image-region: rect(0px 32px 32px 0px);
-  -moz-transition-duration: 0.8s;
+	-moz-image-region: rect(0px 32px 32px 0px);
+	-moz-transition-duration: 0.8s;
+	cursor:pointer;
 }
 
 #panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser[disabled] {
   opacity: 0.5;
+}
+
+/* Small Icon Override */
+.rmf_small_icon{
+	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png")!important;
+	-moz-image-region: rect(0px 16px 16px 0px)!important;
+}
+.rmf_small_icon:hover{
+	list-style-image: url("chrome://R-M-F/skin/icon16h.png")!important;
+	-moz-transition-duration: 0.8s!important;	
+	cursor:pointer;  
 }
