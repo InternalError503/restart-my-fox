@@ -66,7 +66,6 @@
 	list-style-image: url("chrome://R-M-F/skin/icon32h.png");
 	-moz-image-region: rect(0px 32px 32px 0px);
 	-moz-transition-duration: 0.8s;
-	cursor:pointer;
 }
 
 #panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser[disabled] {
@@ -81,5 +80,4 @@
 .rmf_small_icon:hover{
 	list-style-image: url("chrome://R-M-F/skin/icon16h.png")!important;
 	-moz-transition-duration: 0.8s!important;	
-	cursor:pointer;  
 }
