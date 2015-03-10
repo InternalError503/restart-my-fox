@@ -11,7 +11,7 @@ var RestartMyFox = {
 	Branding: Services.strings.createBundle("chrome://branding/locale/brand.properties").GetStringFromName("brandShortName"),
 	
 	init: function (){
-		
+
 		try {
 				 document.getElementById("PanelUI-popup").addEventListener("popupshowing", function (e) {				 
 					if (!Services.prefs.getBoolPref("extensions.restart_my_fox.paneluibutton")){					
@@ -54,25 +54,19 @@ var RestartMyFox = {
 				if (Services.prompt.confirm(null, this.RMFBundle.formatStringFromName("dialogue.title", [this.Branding], 1), 
 					this.RMFBundle.formatStringFromName("dialogue.message", [this.Branding], 1))){
 					
-						if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
-						
+						if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){						
 							Services.appinfo.invalidateCachesOnRestart();
-							Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
-							
-						}else{
-						
-							Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+							Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);							
+						}else{						
+							Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);
 						}
 				}
 			}else{
-				if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
-					
+				if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){					
 					Services.appinfo.invalidateCachesOnRestart();
-					Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
-						
-				}else{
-					
-					Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup).quit(Ci.nsIAppStartup.eRestart | Ci.nsIAppStartup.eAttemptQuit);
+					Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);						
+				}else{					
+					Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);
 				}
 			}
 			}catch (e){
