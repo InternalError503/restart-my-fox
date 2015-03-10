@@ -5,51 +5,50 @@
    file, You can obtain one at http://mozilla.org/MPL/2.0/.
 -->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-
 <!DOCTYPE prefwindow [
+
 <!ENTITY % commonDTD SYSTEM "chrome://R-M-F/locale/RMFlocale.dtd">
 %commonDTD;
 ]>
-
-<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+<prefwindow
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 					   id="restart_my_fox_options_dialogue">
-	<prefpane  id="restart_my_fox_options">		
-		<preferences>	
-			<preference id="extensions.restart_my_fox.purgecache" 
+    <prefpane  id="restart_my_fox_options">
+        <preferences>
+            <preference id="extensions.restart_my_fox.purgecache" 
 								 name="extensions.restart_my_fox.purgecache" 
-								 type="bool"/>	
-			<preference id="extensions.restart_my_fox.paneluibutton" 
+								 type="bool"/>
+            <preference id="extensions.restart_my_fox.paneluibutton" 
 								 name="extensions.restart_my_fox.paneluibutton" 
-								 type="bool"/>		
-			<preference id="extensions.restart_my_fox.menubarbutton" 
+								 type="bool"/>
+            <preference id="extensions.restart_my_fox.menubarbutton" 
 								 name="extensions.restart_my_fox.menubarbutton" 
 								 type="bool"/>
-			<preference id="extensions.restart_my_fox.requireconfirm" 
+            <preference id="extensions.restart_my_fox.requireconfirm" 
 								 name="extensions.restart_my_fox.requireconfirm" 
 								 type="bool"/>
-			<preference id="extensions.restart_my_fox.panelbtnsmall" 
+            <preference id="extensions.restart_my_fox.panelbtnsmall" 
 								 name="extensions.restart_my_fox.panelbtnsmall" 
-								 type="bool"/>									 
-		</preferences>
-			<groupbox flex="1">
-				<caption label="&rmf_cachecaption.label;"/>
-				<checkbox id="extensions.restart_my_fox.purgecache" label="&rmf_fastrestartcache.label;"
+								 type="bool"/>
+        </preferences>
+        <groupbox flex="1">
+            <caption label="&rmf_cachecaption.label;"/>
+            <checkbox id="extensions.restart_my_fox.purgecache" label="&rmf_fastrestartcache.label;"
 								   preference="extensions.restart_my_fox.purgecache"/>
-			</groupbox>	
-			<groupbox flex="1">
-			<caption label="&rmf_btnsmenusaption.label;"/>
-			<checkbox id="extensions.restart_my_fox.paneluibutton" label="&rmf_paneluibtn.label;"
+        </groupbox>
+        <groupbox flex="1">
+            <caption label="&rmf_btnsmenusaption.label;"/>
+            <checkbox id="extensions.restart_my_fox.paneluibutton" label="&rmf_paneluibtn.label;"
 							   preference="extensions.restart_my_fox.paneluibutton"/>
-			<checkbox id="extensions.restart_my_fox.menubarbutton" label="&rmf_menubarbtn.label;"
+            <checkbox id="extensions.restart_my_fox.menubarbutton" label="&rmf_menubarbtn.label;"
 							   preference="extensions.restart_my_fox.menubarbutton"/>
-			<checkbox id="extensions.restart_my_fox.panelbtnsmall" label="&rmf_panelbtnsmall.label;"
-							   preference="extensions.restart_my_fox.panelbtnsmall"/>							   
-			</groupbox>
-			<groupbox flex="1">
-				<caption label="&rmf_confirmationcaption.label;"/>
-				<checkbox id="extensions.restart_my_fox.requireconfirm" label="&rmf_reqconfirmation.label;"
+            <checkbox id="extensions.restart_my_fox.panelbtnsmall" label="&rmf_panelbtnsmall.label;"
+							   preference="extensions.restart_my_fox.panelbtnsmall"/>
+        </groupbox>
+        <groupbox flex="1">
+            <caption label="&rmf_confirmationcaption.label;"/>
+            <checkbox id="extensions.restart_my_fox.requireconfirm" label="&rmf_reqconfirmation.label;"
 								   preference="extensions.restart_my_fox.requireconfirm"/>
-			</groupbox>				
-	</prefpane>
-	
+        </groupbox>
+    </prefpane>
 </prefwindow>

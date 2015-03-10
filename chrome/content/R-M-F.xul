@@ -6,54 +6,46 @@
    License, v. 2.0. If a copy of the MPL was not distributed with this
    file, You can obtain one at http://mozilla.org/MPL/2.0/.
 -->
-
 <!DOCTYPE overlay [
+
 <!ENTITY % commonDTD SYSTEM "chrome://R-M-F/locale/RMFlocale.dtd">
 %commonDTD;
 ]>
-
 <overlay id="RestartMyFox"
-         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-<script src="chrome://R-M-F/content/overlay.js"/>
-
-	<menupopup id="appmenuPrimaryPane">
-		<menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="chrome://R-M-F/content/overlay.js"/>
+    <menupopup id="appmenuPrimaryPane">
+        <menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;"			
-					oncommand="RestartMyFox.restartBrowser();" insertbefore="appmenu-quit"/>	
-	</menupopup>	
-	
-		<menupopup id="menu_FilePopup">
-		<menuitem id="menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+					oncommand="RestartMyFox.restartBrowser();" insertbefore="appmenu-quit"/>
+    </menupopup>
+    <menupopup id="menu_FilePopup">
+        <menuitem id="menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;"
 					accesskey="&restartMyFox.accesskey;"					
 					oncommand="RestartMyFox.restartBrowser();" insertbefore="menu_FileQuitItem"/>
-	</menupopup>
-	
-	<!-- Add RMF to Austalis menu panel next to quit button -->
-	<panel id="PanelUI-footer-inner">
-		<toolbarbutton id="panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+    </menupopup>
+    <!-- Add RMF to Austalis menu panel next to quit button -->
+    <panel id="PanelUI-footer-inner">
+        <toolbarbutton id="panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
 					label="&restartMyFox.label;"
 					oncommand="RestartMyFox.restartBrowser();"
 					insertbefore="PanelUI-quit"
 				    tooltiptext="&restartMyFox.label;"/>
-		<toolbarseparator insertbefore="PanelUI-quit"/>
-	</panel>
-	
-	<!--
+        <toolbarseparator insertbefore="PanelUI-quit"/>
+    </panel>
+    <!--
 	Allow tool-bar button, due to removal of app-menu in australis, keeping legacy code for app-menu, for legacy support!
 	-->
-	<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarpalette id="BrowserToolbarPalette">
         <toolbarbutton id="toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser" 
 					   class="toolbarbutton-1 chromeclass-toolbar-additional "
 					   label="&restartMyFox.label;"	
 					   tooltiptext="&restartMyFox.label;"					   
-                       oncommand="RestartMyFox.restartBrowser();">
-        </toolbarbutton>
-    </toolbarpalette>	
-	
-	
+                       oncommand="RestartMyFox.restartBrowser();"></toolbarbutton>
+    </toolbarpalette>
 </overlay>
