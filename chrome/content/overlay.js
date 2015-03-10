@@ -7,7 +7,7 @@ Services.prefs.QueryInterface(Ci.nsIPrefBranch);
 
 var RestartMyFox = {
 
-	RMFBundle: Cc["@mozilla.org/intl/stringbundle;1"].getService(Ci.nsIStringBundleService).createBundle("chrome://R-M-F/locale/RMFdialogue.properties"),
+	RMFBundle: Services.strings.createBundle("chrome://R-M-F/locale/RMFdialogue.properties"),
 	Branding: Services.strings.createBundle("chrome://branding/locale/brand.properties").GetStringFromName("brandShortName"),
 	
 	init: function (){
