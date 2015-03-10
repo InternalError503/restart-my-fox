@@ -6,8 +6,7 @@ Cu.import("resource://gre/modules/Services.jsm");
 Services.prefs.QueryInterface(Ci.nsIPrefBranch);
 
 var RestartMyFox = {
-	
-	Prompter: Cc["@mozilla.org/embedcomp/prompt-service;1"].getService(Ci.nsIPromptService),
+
 	RMFBundle: Cc["@mozilla.org/intl/stringbundle;1"].getService(Ci.nsIStringBundleService).createBundle("chrome://R-M-F/locale/RMFdialogue.properties"),
 	Branding: Services.strings.createBundle("chrome://branding/locale/brand.properties").GetStringFromName("brandShortName"),
 	
@@ -52,7 +51,7 @@ var RestartMyFox = {
 		try{
 				
 			if (Services.prefs.getBoolPref("extensions.restart_my_fox.requireconfirm")){	
-				if (this.Prompter.confirm(null, this.RMFBundle.formatStringFromName("dialogue.title", [this.Branding], 1), 
+				if (Services.prompt.confirm(null, this.RMFBundle.formatStringFromName("dialogue.title", [this.Branding], 1), 
 					this.RMFBundle.formatStringFromName("dialogue.message", [this.Branding], 1))){
 					
 						if (Services.prefs.getBoolPref("extensions.restart_my_fox.purgecache")){
