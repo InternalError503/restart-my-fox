@@ -13,42 +13,72 @@
 <prefwindow
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 					   id="restart_my_fox_options_dialogue">
+<script type="application/x-javascript" src="options.js"/>
     <prefpane  id="restart_my_fox_options">
         <preferences>
-            <preference id="extensions.restart_my_fox.purgecache" 
+            <preference id="restart_my_fox_purgecache" 
 								 name="extensions.restart_my_fox.purgecache" 
-								 type="bool"/>
-            <preference id="extensions.restart_my_fox.paneluibutton" 
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_paneluibutton" 
 								 name="extensions.restart_my_fox.paneluibutton" 
-								 type="bool"/>
-            <preference id="extensions.restart_my_fox.menubarbutton" 
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_menubarbutton" 
 								 name="extensions.restart_my_fox.menubarbutton" 
-								 type="bool"/>
-            <preference id="extensions.restart_my_fox.requireconfirm" 
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_requireconfirm" 
 								 name="extensions.restart_my_fox.requireconfirm" 
-								 type="bool"/>
-            <preference id="extensions.restart_my_fox.panelbtnsmall" 
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_panelbtnsmall" 
 								 name="extensions.restart_my_fox.panelbtnsmall" 
-								 type="bool"/>
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_customicon" 
+								 name="extensions.restart_my_fox.customicon" 
+								 type="bool"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_customiconcolor" 
+								 name="extensions.restart_my_fox.customiconcolor" 
+								 type="string"
+								 instantApply="true"/>
+            <preference id="restart_my_fox_customicondark" 
+								 name="extensions.restart_my_fox.customicondark" 
+								 type="bool"
+								 instantApply="true"/>
         </preferences>
         <groupbox flex="1">
             <caption label="&rmf_cachecaption.label;"/>
-            <checkbox id="extensions.restart_my_fox.purgecache" label="&rmf_fastrestartcache.label;"
-								   preference="extensions.restart_my_fox.purgecache"/>
+            <checkbox id="restart_my_fox_purgecache" label="&rmf_fastrestartcache.label;"
+								   preference="restart_my_fox_purgecache"/>
         </groupbox>
         <groupbox flex="1">
             <caption label="&rmf_btnsmenusaption.label;"/>
-            <checkbox id="extensions.restart_my_fox.paneluibutton" label="&rmf_paneluibtn.label;"
-							   preference="extensions.restart_my_fox.paneluibutton"/>
-            <checkbox id="extensions.restart_my_fox.menubarbutton" label="&rmf_menubarbtn.label;"
-							   preference="extensions.restart_my_fox.menubarbutton"/>
-            <checkbox id="extensions.restart_my_fox.panelbtnsmall" label="&rmf_panelbtnsmall.label;"
-							   preference="extensions.restart_my_fox.panelbtnsmall"/>
+            <checkbox id="restart_my_fox_paneluibutton" label="&rmf_paneluibtn.label;"
+							   preference="restart_my_fox_paneluibutton"/>
+            <checkbox id="restart_my_fox_menubarbutton" label="&rmf_menubarbtn.label;"
+							   preference="restart_my_fox_menubarbutton"/>
+            <checkbox id="restart_my_fox_panelbtnsmall" label="&rmf_panelbtnsmall.label;"
+							   preference="restart_my_fox_panelbtnsmall"/>
         </groupbox>
         <groupbox flex="1">
             <caption label="&rmf_confirmationcaption.label;"/>
-            <checkbox id="extensions.restart_my_fox.requireconfirm" label="&rmf_reqconfirmation.label;"
-								   preference="extensions.restart_my_fox.requireconfirm"/>
+            <checkbox id="restart_my_fox_requireconfirm" label="&rmf_reqconfirmation.label;"
+								   preference="restart_my_fox_requireconfirm"/>
         </groupbox>
+        <groupbox flex="1">
+            <caption label="&rmf_customizecaption.label;" id="rmfcustomicon"/>
+            <checkbox id="restart_my_fox_customicon" label="&rmf_custompuibuttoncolor.label;"
+								   preference="restart_my_fox_customicon"/>
+			<hbox>
+				<label value="&rmf_selectpuibuttoncolor.label;" id="rmfcustomiconcolor"/>
+				<textbox preference="restart_my_fox_customiconcolor" width="70px" maxlength="11" id="rmfcustomiconcolort"/>
+				<colorpicker preference="restart_my_fox_customiconcolor" type="button" id="rmfcustomiconcolorc"/>
+			</hbox>	
+            <checkbox id="restart_my_fox_customicondark" label="&rmf_darkpuicon.label;"
+								   preference="restart_my_fox_customicondark"/>								   
+        </groupbox>		
     </prefpane>
 </prefwindow>

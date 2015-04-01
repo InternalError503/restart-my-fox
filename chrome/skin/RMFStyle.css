@@ -81,3 +81,30 @@
 	list-style-image: url("chrome://R-M-F/skin/icon16h.png")!important;
 	-moz-transition-duration: 0.8s!important;	
 }
+
+/* Custom Icon Override */
+.rmf_custom_icon_pui{
+	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite_Inverted.png")!important;
+	-moz-image-region: rect(0px 72px 32px 40px)!important;
+	margin: 3px!important;
+}
+.rmf_custom_icon_pui:not([disabled]):hover{
+	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite_Inverted.png")!important;
+	-moz-image-region: rect(64px 72px 96px 40px)!important;
+}
+.rmf_custom_icon_pui:[disabled]:hover{
+	  opacity: 0.5!important;
+}
+
+.rmf_custom_icon_puid{
+	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite_Dark.png")!important;
+	-moz-image-region: rect(0px 72px 32px 40px)!important;
+	margin: 3px!important;
+}
+.rmf_custom_icon_puid:not([disabled]):hover{
+	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite_Dark.png")!important;
+	-moz-image-region: rect(64px 72px 96px 40px)!important;
+}
+.rmf_custom_icon_puid:[disabled]:hover{
+	  opacity: 0.5!important;
+}

@@ -8,3 +8,7 @@
 <!ENTITY rmf_menubarbtn.label "Add to File menu.">
 <!ENTITY rmf_reqconfirmation.label "Require restart confirmation.">
 <!ENTITY rmf_panelbtnsmall.label "Use small button on panel UI.">
+<!ENTITY rmf_customizecaption.label "Customize Restart Icon">
+<!ENTITY rmf_custompuibuttoncolor.label "Use custom restart panel UI button color">
+<!ENTITY rmf_selectpuibuttoncolor.label "Select custom panel UI button background color">
+<!ENTITY rmf_darkpuicon.label "Use dark button icon">
