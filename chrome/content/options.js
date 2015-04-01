@@ -36,7 +36,6 @@ var RestartMyFoxOptions = {
 
             //Listen for change
             Application.prefs.get("extensions.restart_my_fox.panelbtnsmall").events.addListener("change", function(aEvent) {
-                console.log("gg");
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.panelbtnsmall") === true) {
                     document.getElementById("restart_my_fox_customicon").disabled = true;
                     document.getElementById("rmfcustomicon").disabled = true;
@@ -57,7 +56,6 @@ var RestartMyFoxOptions = {
             });
 
             Application.prefs.get("extensions.restart_my_fox.customicon").events.addListener("change", function(aEvent) {
-                console.log("aa");
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicon") === true) {
                     document.getElementById("restart_my_fox_panelbtnsmall").disabled = true;
                 } else {
