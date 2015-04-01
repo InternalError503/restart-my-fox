@@ -12,7 +12,6 @@ var RestartMyFoxOptions = {
             //Set default states
             if (Services.prefs.getBoolPref("extensions.restart_my_fox.panelbtnsmall") === true) {
                 document.getElementById("restart_my_fox_customicon").disabled = true;
-                document.getElementById("rmfcustomicon").disabled = true;
                 document.getElementById("rmfcustomiconcolor").disabled = true;
                 document.getElementById("rmfcustomiconcolort").disabled = true;
                 document.getElementById("rmfcustomiconcolorc").disabled = true;
@@ -21,24 +20,28 @@ var RestartMyFoxOptions = {
             } else {
                 document.getElementById("restart_my_fox_customicon").disabled = false;
                 document.getElementById("rmfcustomicon").disabled = false;
-                document.getElementById("rmfcustomiconcolor").disabled = false;
-                document.getElementById("rmfcustomiconcolort").disabled = false;
-                document.getElementById("rmfcustomiconcolorc").disabled = false;
-                document.getElementById("restart_my_fox_customiconcolor").disabled = false;
-                document.getElementById("restart_my_fox_customicondark").disabled = false;
             }
 
-            if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicon") === true) {
-                document.getElementById("restart_my_fox_panelbtnsmall").disabled = true;
-            } else {
-                document.getElementById("restart_my_fox_panelbtnsmall").disabled = false;
-            }
+                if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicon") === true) {
+                    document.getElementById("restart_my_fox_panelbtnsmall").disabled = true;
+                    document.getElementById("rmfcustomiconcolor").disabled = false;
+                    document.getElementById("rmfcustomiconcolort").disabled = false;
+                    document.getElementById("rmfcustomiconcolorc").disabled = false;
+                    document.getElementById("restart_my_fox_customiconcolor").disabled = false;
+                    document.getElementById("restart_my_fox_customicondark").disabled = false;
+                } else {
+                    document.getElementById("restart_my_fox_panelbtnsmall").disabled = false;
+                    document.getElementById("rmfcustomiconcolor").disabled = true;
+                    document.getElementById("rmfcustomiconcolort").disabled = true;
+                    document.getElementById("rmfcustomiconcolorc").disabled = true;
+                    document.getElementById("restart_my_fox_customiconcolor").disabled = true;
+                    document.getElementById("restart_my_fox_customicondark").disabled = true;
+                }
 
             //Listen for change
             Application.prefs.get("extensions.restart_my_fox.panelbtnsmall").events.addListener("change", function(aEvent) {
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.panelbtnsmall") === true) {
                     document.getElementById("restart_my_fox_customicon").disabled = true;
-                    document.getElementById("rmfcustomicon").disabled = true;
                     document.getElementById("rmfcustomiconcolor").disabled = true;
                     document.getElementById("rmfcustomiconcolort").disabled = true;
                     document.getElementById("rmfcustomiconcolorc").disabled = true;
@@ -46,20 +49,24 @@ var RestartMyFoxOptions = {
                     document.getElementById("restart_my_fox_customicondark").disabled = true;
                 } else {
                     document.getElementById("restart_my_fox_customicon").disabled = false;
-                    document.getElementById("rmfcustomicon").disabled = false;
-                    document.getElementById("rmfcustomiconcolor").disabled = false;
-                    document.getElementById("rmfcustomiconcolort").disabled = false;
-                    document.getElementById("rmfcustomiconcolorc").disabled = false;
-                    document.getElementById("restart_my_fox_customiconcolor").disabled = false;
-                    document.getElementById("restart_my_fox_customicondark").disabled = false;
                 }
             });
 
             Application.prefs.get("extensions.restart_my_fox.customicon").events.addListener("change", function(aEvent) {
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicon") === true) {
                     document.getElementById("restart_my_fox_panelbtnsmall").disabled = true;
+                    document.getElementById("rmfcustomiconcolor").disabled = false;
+                    document.getElementById("rmfcustomiconcolort").disabled = false;
+                    document.getElementById("rmfcustomiconcolorc").disabled = false;
+                    document.getElementById("restart_my_fox_customiconcolor").disabled = false;
+                    document.getElementById("restart_my_fox_customicondark").disabled = false;
                 } else {
                     document.getElementById("restart_my_fox_panelbtnsmall").disabled = false;
+                    document.getElementById("rmfcustomiconcolor").disabled = true;
+                    document.getElementById("rmfcustomiconcolort").disabled = true;
+                    document.getElementById("rmfcustomiconcolorc").disabled = true;
+                    document.getElementById("restart_my_fox_customiconcolor").disabled = true;
+                    document.getElementById("restart_my_fox_customicondark").disabled = true;
                 }
             });
 
