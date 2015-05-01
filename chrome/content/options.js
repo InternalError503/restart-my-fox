@@ -75,5 +75,6 @@ var RestartMyFoxOptions = {
 
 }
 window.addEventListener("load", function() {
+	window.removeEventListener("load", RestartMyFoxOptions.init(), false);
     RestartMyFoxOptions.init();
 }, false);
