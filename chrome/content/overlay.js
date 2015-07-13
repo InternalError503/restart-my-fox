@@ -31,27 +31,63 @@ var RestartMyFox = {
                 }
             });
 
-            //Listen for change "panelbtnsmall" if false clear attribute
-            Application.prefs.get("extensions.restart_my_fox.panelbtnsmall").events.addListener("change", function(aEvent) {
-                if (!Services.prefs.getBoolPref("extensions.restart_my_fox.panelbtnsmall")) {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
-                }
-            });
+            function PrefListener(branch_name, callback) {
+                // Keeping a reference to the observed preference branch or it will get
+                // garbage collected.
+                this._branch = Services.prefs.getBranch(branch_name);
+                this._branch.QueryInterface(Components.interfaces.nsIPrefBranch2);
+                this._callback = callback;
+            }
 
-            //Listen for change "customicon" if false clear attributes
-            Application.prefs.get("extensions.restart_my_fox.customicon").events.addListener("change", function(aEvent) {
-                if (!Services.prefs.getBoolPref("extensions.restart_my_fox.customicon")) {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('style');
-                }
-            });
+            PrefListener.prototype.observe = function(subject, topic, data) {
+                if (topic == 'nsPref:changed')
+                    this._callback(this._branch, data);
+            };
 
-            //Listen for change "customicondark" if false clear attribute
-            Application.prefs.get("extensions.restart_my_fox.customicondark").events.addListener("change", function(aEvent) {
-                if (!Services.prefs.getBoolPref("extensions.restart_my_fox.customicondark")) {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+            PrefListener.prototype.register = function(trigger) {
+                this._branch.addObserver('', this, false);
+                if (trigger) {
+                    let that = this;
+                    this._branch.getChildList('', {}).
+                    forEach(function(pref_leaf_name) {
+                        that._callback(that._branch, pref_leaf_name);
+                    });
                 }
-            });
+            };
+
+            PrefListener.prototype.unregister = function() {
+                if (this._branch)
+                    this._branch.removeObserver('', this);
+            };
+
+            var RestartMyFoxSettingsListener = new PrefListener(
+                "extensions.restart_my_fox.",
+                function(branch, name) {
+                    switch (name) {
+                        //Listen for change "panelbtnsmall" if false clear attribute
+                        case "panelbtnsmall":
+                            if (!branch.getBoolPref("panelbtnsmall")) {
+                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+                            }
+                            break;
+                            //Listen for change "customicon" if false clear attributes
+                        case "customicon":
+                            if (!branch.getBoolPref("customicon")) {
+                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('style');
+                            }
+                            break;
+                            //Listen for change "customicondark" if false clear attribute
+                        case "customicondark":
+                            if (!branch.getBoolPref("customicondark")) {
+                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+                            }
+                            break;
+                    }
+                }
+            );
+
+            RestartMyFoxSettingsListener.register(true);
 
             document.getElementById("toolbar-menubar").addEventListener("popupshowing", function(e) {
                 if (!Services.prefs.getBoolPref("extensions.restart_my_fox.menubarbutton")) {
