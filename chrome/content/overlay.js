@@ -144,7 +144,7 @@ RestartMyFox = {
             }
         } catch (e) {
             //Catch any nasty errors and output to dialogue.
-            alert("Were sorry, Something has gone wrong while attempting to restart browser! " + e);
+            Services.prompt.alert("Were sorry, Something has gone wrong while attempting to restart browser! " + e);
         }
 
     }
