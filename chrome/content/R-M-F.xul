@@ -15,14 +15,14 @@
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     <script src="chrome://R-M-F/content/overlay.js"/>
     <menupopup id="appmenuPrimaryPane">
-        <menuitem id="appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+        <menuitem id="appmenu_94862_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;"			
 					oncommand="RestartMyFox.restartBrowser();" insertbefore="appmenu-quit"/>
     </menupopup>
     <menupopup id="menu_FilePopup">
-        <menuitem id="menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+        <menuitem id="menu_94862_restartBrowser"
 					iconic="true"
 					class="menuitem-iconic"
 					label="&restartMyFox.label;"
@@ -31,7 +31,7 @@
     </menupopup>
     <!-- Add RMF to Austalis menu panel next to quit button -->
     <panel id="PanelUI-footer-inner">
-        <toolbarbutton id="panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser"
+        <toolbarbutton id="panel_menu_94862_restartBrowser"
 					label="&restartMyFox.label;"
 					oncommand="RestartMyFox.restartBrowser();"
 					insertbefore="PanelUI-quit"
@@ -42,7 +42,7 @@
 	Allow tool-bar button, due to removal of app-menu in australis, keeping legacy code for app-menu, for legacy support!
 	-->
     <toolbarpalette id="BrowserToolbarPalette">
-        <toolbarbutton id="toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser" 
+        <toolbarbutton id="toolbar_94862_restartBrowser" 
 					   class="toolbarbutton-1 chromeclass-toolbar-additional "
 					   label="&restartMyFox.label;"	
 					   tooltiptext="&restartMyFox.label;"					   

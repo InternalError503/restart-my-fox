@@ -14,20 +14,20 @@ var RestartMyFox = {
         try {
             document.getElementById("PanelUI-popup").addEventListener("popupshowing", function(e) {
                 if (!Services.prefs.getBoolPref("extensions.restart_my_fox.paneluibutton")) {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = true;
+                    document.getElementById("panel_menu_94862_restartBrowser").hidden = true;
                 } else {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = false;
+                    document.getElementById("panel_menu_94862_restartBrowser").hidden = false;
                 }
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.panelbtnsmall")) {
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").className = "rmf_small_icon";
+                    document.getElementById("panel_menu_94862_restartBrowser").className = "rmf_small_icon";
                 }
                 if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicon")) {
                     if (Services.prefs.getBoolPref("extensions.restart_my_fox.customicondark")) {
-                        document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").className = "rmf_custom_icon_puid";
+                        document.getElementById("panel_menu_94862_restartBrowser").className = "rmf_custom_icon_puid";
                     } else {
-                        document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").className = "rmf_custom_icon_pui";
+                        document.getElementById("panel_menu_94862_restartBrowser").className = "rmf_custom_icon_pui";
                     }
-                    document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").style.backgroundColor = Services.prefs.getCharPref("extensions.restart_my_fox.customiconcolor");
+                    document.getElementById("panel_menu_94862_restartBrowser").style.backgroundColor = Services.prefs.getCharPref("extensions.restart_my_fox.customiconcolor");
                 }
             });
 
@@ -67,20 +67,20 @@ var RestartMyFox = {
                         //Listen for change "panelbtnsmall" if false clear attribute
                         case "panelbtnsmall":
                             if (!branch.getBoolPref("panelbtnsmall")) {
-                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+                                document.getElementById("panel_menu_94862_restartBrowser").removeAttribute('class');
                             }
                             break;
                             //Listen for change "customicon" if false clear attributes
                         case "customicon":
                             if (!branch.getBoolPref("customicon")) {
-                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
-                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('style');
+                                document.getElementById("panel_menu_94862_restartBrowser").removeAttribute('class');
+                                document.getElementById("panel_menu_94862_restartBrowser").removeAttribute('style');
                             }
                             break;
                             //Listen for change "customicondark" if false clear attribute
                         case "customicondark":
                             if (!branch.getBoolPref("customicondark")) {
-                                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('class');
+                                document.getElementById("panel_menu_94862_restartBrowser").removeAttribute('class');
                             }
                             break;
                     }
@@ -91,18 +91,18 @@ var RestartMyFox = {
 
             document.getElementById("toolbar-menubar").addEventListener("popupshowing", function(e) {
                 if (!Services.prefs.getBoolPref("extensions.restart_my_fox.menubarbutton")) {
-                    document.getElementById("menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = true;
+                    document.getElementById("menu_94862_restartBrowser").hidden = true;
                 } else {
-                    document.getElementById("menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").hidden = false;
+                    document.getElementById("menu_94862_restartBrowser").hidden = false;
                 }
             });
 
             window.addEventListener("beforecustomization", function(e) {
-                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").setAttribute('disabled', true);
+                document.getElementById("panel_menu_94862_restartBrowser").setAttribute('disabled', true);
             }, false);
 
             window.addEventListener("aftercustomization", function(e) {
-                document.getElementById("panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser").removeAttribute('disabled');
+                document.getElementById("panel_menu_94862_restartBrowser").removeAttribute('disabled');
             }, false);
 
         } catch (e) {}

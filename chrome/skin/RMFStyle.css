@@ -4,48 +4,48 @@
 
  /*Classic theme restorer\Legacy*/
  
-#appmenu_948622EF9DD31D8EC28360C72957C429_restartBrowser{
+#appmenu_94862_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
 
 /*Menu-Bar Tool-bar*/
 
-#menu_948622EF9DD31D8EC28360C72957C429_restartBrowser{
+#menu_94862_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
 
 /*Tool-bar*/
 
-#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser{
+#toolbar_94862_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 16px 16px 0px);
 }
 
-#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([cui-areatype="toolbar"])> .toolbarbutton-icon{
+#toolbar_94862_restartBrowser:not([cui-areatype="toolbar"])> .toolbarbutton-icon{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 72px 32px 40px);
 }
 
-#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser:hover{
+#toolbar_94862_restartBrowser:hover{
 	list-style-image: url("chrome://R-M-F/skin/icon16h.png");
 	-moz-transition-duration: 0.8s;	
 }
 
 /*Menu Panel*/
 
-#toolbar_948622EF9DD31D8EC28360C72957C429_restartBrowser[cui-areatype="menu-panel"]{
+#toolbar_94862_restartBrowser[cui-areatype="menu-panel"]{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 72px 32px 40px);
 }
 
 /* Don't show label on menu panel */
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser > .toolbarbutton-text {
+#panel_menu_94862_restartBrowser > .toolbarbutton-text {
 	display:none;
 }
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser{
+#panel_menu_94862_restartBrowser{
 	list-style-image: url("chrome://R-M-F/skin/RMF_Sprite.png");
 	-moz-image-region: rect(0px 72px 32px 40px);
 	min-width: 32px;
@@ -58,17 +58,17 @@
 	-moz-box-orient: horizontal;	
 }
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser> .toolbarbutton-icon {
+#panel_menu_94862_restartBrowser> .toolbarbutton-icon {
   -moz-margin-end: 0;
  } 
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser:not([disabled]):hover {
+#panel_menu_94862_restartBrowser:not([disabled]):hover {
 	list-style-image: url("chrome://R-M-F/skin/icon32h.png");
 	-moz-image-region: rect(0px 32px 32px 0px);
 	-moz-transition-duration: 0.8s;
 }
 
-#panel_menu_948622EF9DD31D8EC28360C72957C429_restartBrowser[disabled] {
+#panel_menu_94862_restartBrowser[disabled] {
   opacity: 0.5;
 }
 
