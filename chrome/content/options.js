@@ -1,10 +1,20 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-Components.utils.import("resource://gre/modules/Services.jsm");
-Services.prefs.QueryInterface(Components.interfaces.nsIPrefBranch);
+"use strict";
 
-var RestartMyFoxOptions = {
+(function(global) {
+ 
+var {Services} = Components.utils.import("resource://gre/modules/Services.jsm", {});
+
+if (typeof RestartMyFoxOptions  == "undefined") {
+    var RestartMyFoxOptions  = {};
+};
+if (!RestartMyFoxOptions ) {
+    RestartMyFoxOptions  = {};
+};
+
+RestartMyFoxOptions = {
 
     init: function() {
         try {
@@ -112,7 +122,9 @@ var RestartMyFoxOptions = {
     }
 
 }
-window.addEventListener("load", function() {
-	window.removeEventListener("load", RestartMyFoxOptions.init(), false);
-    RestartMyFoxOptions.init();
-}, false);
+global.RestartMyFoxOptions = RestartMyFoxOptions;
+	window.addEventListener("load", function() {
+		window.removeEventListener("load", RestartMyFoxOptions.init(), false);
+		RestartMyFoxOptions.init();
+	}, false);
+}(this));

@@ -1,10 +1,20 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-Cu.import("resource://gre/modules/Services.jsm");
-Services.prefs.QueryInterface(Ci.nsIPrefBranch);
+"use strict";
 
-var RestartMyFox = {
+(function(global) {
+ 
+var {Services} = Cu.import("resource://gre/modules/Services.jsm", {});
+
+if (typeof RestartMyFox  == "undefined") {
+    var RestartMyFox  = {};
+};
+if (!RestartMyFox ) {
+    RestartMyFox  = {};
+};
+
+RestartMyFox = {
 
     RMFBundle: Services.strings.createBundle("chrome://R-M-F/locale/RMFdialogue.properties"),
     Branding: Services.strings.createBundle("chrome://branding/locale/brand.properties").GetStringFromName("brandShortName"),
@@ -140,4 +150,7 @@ var RestartMyFox = {
     }
 
 }
-RestartMyFox.init();
+  
+  global.RestartMyFox = RestartMyFox;
+  RestartMyFox.init();
+}(this));
