@@ -1,14 +1,14 @@
-<!ENTITY restartMyFox.label "restart przeglądarki">
-<!ENTITY rmf_fastrestartcache.label "Clear fast restart cache on browser restart.">
+<!ENTITY restartMyFox.label "Zrestartuj przeglądarkę">
+<!ENTITY rmf_fastrestartcache.label "Czyść pamięć podręczną szybkiego restartu podczas restartu przeglądarki.">
 <!ENTITY restartMyFox.accesskey "R">
-<!ENTITY rmf_cachecaption.label "Cache">
-<!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
-<!ENTITY rmf_confirmationcaption.label "Restart Confirmation">
-<!ENTITY rmf_paneluibtn.label "Add button to PanelUI">
-<!ENTITY rmf_menubarbtn.label "Add to File menu.">
-<!ENTITY rmf_reqconfirmation.label "Require restart confirmation.">
-<!ENTITY rmf_panelbtnsmall.label "Use small button on panel UI.">
-<!ENTITY rmf_customizecaption.label "Customize Restart Icon">
-<!ENTITY rmf_custompuibuttoncolor.label "Use custom restart panel UI button color">
-<!ENTITY rmf_selectpuibuttoncolor.label "Select custom panel UI button background color">
-<!ENTITY rmf_darkpuicon.label "Use dark button icon">
+<!ENTITY rmf_cachecaption.label "Pamięć podręczna">
+<!ENTITY rmf_btnsmenusaption.label "Przyciski \ Menu">
+<!ENTITY rmf_confirmationcaption.label "Potwierdzenie restartu">
+<!ENTITY rmf_paneluibtn.label "Dodaj przycisk do interfejsu panelu">
+<!ENTITY rmf_menubarbtn.label "Dodaj do menu Plik.">
+<!ENTITY rmf_reqconfirmation.label "Wymagane potwierdzenie restartu.">
+<!ENTITY rmf_panelbtnsmall.label "Używaj małego przycisku na interfejsie panelu.">
+<!ENTITY rmf_customizecaption.label "Dostosuj ikonę restartu">
+<!ENTITY rmf_custompuibuttoncolor.label "Używaj niestandardowego koloru przycisku restartu interfejsu panelu">
+<!ENTITY rmf_selectpuibuttoncolor.label "Wybierz niestandardowy kolor tła przycisku interfejsu panelu">
+<!ENTITY rmf_darkpuicon.label "Używaj ciemnej ikony przycisku">

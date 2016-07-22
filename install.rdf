@@ -115,7 +115,8 @@
 	<em:localized>
       <Description>
 	<em:locale>pl</em:locale>
-	<em:description>Adds to appMenu (Legacy) or toolsmenu  or tool-bar, the 'Restart browser' menu item or button that allows users to easily restart the web browser without losing current open pages.</em:description>
+	<em:description>Dodaje do menu aplikacji lub menu narzędzia lub paska narzędzi, pozycję menu, lub przycisk 'Zrestartuj przeglądarkę', który pozwala użytkownikom na łatwe ponowne uruchomienie przeglądarki internetowej bez utraty aktualnie otwartych stron.</em:description>
+	<em:translator>hawkeye116477 (Polish)</em:translator>	
       </Description>
     </em:localized>
     <em:localized>
