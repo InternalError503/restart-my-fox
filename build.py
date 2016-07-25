@@ -53,7 +53,7 @@ def buildXPI( version ):
 		for f in sorted(get_files(resources), key=str.lower):
 			compress_type = ZIP_STORED if f.endswith(".png") else ZIP_DEFLATED
 			zp.write(f, compress_type=compress_type)
-			print("Compressing: " + f)
+			print("Compressing: " + f.replace('\\', '/'))
 	return;
 
 # Since we use command line arguments we require two in total "build" & "0.0.0" (Version) for XPI package.	
