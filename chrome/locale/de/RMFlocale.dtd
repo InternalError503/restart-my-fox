@@ -1,4 +1,4 @@
-<!ENTITY restartMyFox.label "Neustarten">
+<!ENTITY restartMyFox.label "Neu starten">
 <!ENTITY rmf_fastrestartcache.label "Schnellstart-Chache bei Neustart löschen">
 <!ENTITY restartMyFox.accesskey "R">
 <!ENTITY rmf_cachecaption.label "Cache für schnellen Neustart">
