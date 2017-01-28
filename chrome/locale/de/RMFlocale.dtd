@@ -1,14 +1,14 @@
-<!ENTITY restartMyFox.label "Neustart Browser">
-<!ENTITY rmf_fastrestartcache.label "Clear fast restart cache on browser restart.">
+<!ENTITY restartMyFox.label "Neustarten">
+<!ENTITY rmf_fastrestartcache.label "Schnellstart-Chache bei Neustart löschen">
 <!ENTITY restartMyFox.accesskey "R">
-<!ENTITY rmf_cachecaption.label "Cache">
-<!ENTITY rmf_btnsmenusaption.label "Buttons \ Menus">
-<!ENTITY rmf_confirmationcaption.label "Restart Confirmation">
-<!ENTITY rmf_paneluibtn.label "Add button to PanelUI">
-<!ENTITY rmf_menubarbtn.label "Add to File menu.">
-<!ENTITY rmf_reqconfirmation.label "Require restart confirmation.">
-<!ENTITY rmf_panelbtnsmall.label "Use small button on panel UI.">
-<!ENTITY rmf_customizecaption.label "Customize Restart Icon">
-<!ENTITY rmf_custompuibuttoncolor.label "Use custom restart panel UI button color">
-<!ENTITY rmf_selectpuibuttoncolor.label "Select custom panel UI button background color">
-<!ENTITY rmf_darkpuicon.label "Use dark button icon">
+<!ENTITY rmf_cachecaption.label "Cache für schnellen Neustart">
+<!ENTITY rmf_btnsmenusaption.label "Schaltfläche / Datei-Menü">
+<!ENTITY rmf_confirmationcaption.label "Neustart bestätigen">
+<!ENTITY rmf_paneluibtn.label "Schaltfläche zu Menüleiste hinzufügen">
+<!ENTITY rmf_menubarbtn.label "Schaltfläche im Datei-Menü hinzufügen">
+<!ENTITY rmf_reqconfirmation.label "Vor dem Neustart fragen">
+<!ENTITY rmf_panelbtnsmall.label "Kleines Symbol für Menüleiste">
+<!ENTITY rmf_customizecaption.label "Schaltfläche anpassen">
+<!ENTITY rmf_custompuibuttoncolor.label "Anpassung in Menüleiste verwenden">
+<!ENTITY rmf_selectpuibuttoncolor.label "Hintergrundfarbe für Schaltfläche in Menüleiste">
+<!ENTITY rmf_darkpuicon.label "Dunkle Symbolfarbe verwenden">
