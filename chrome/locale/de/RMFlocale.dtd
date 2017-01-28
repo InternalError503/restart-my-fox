@@ -1,7 +1,7 @@
 <!ENTITY restartMyFox.label "Neu starten">
-<!ENTITY rmf_fastrestartcache.label "Schnellstart-Chache bei Neustart löschen">
+<!ENTITY rmf_fastrestartcache.label "Schnellstart-Cache löschen und neu erzeugen">
 <!ENTITY restartMyFox.accesskey "R">
-<!ENTITY rmf_cachecaption.label "Cache für schnellen Neustart">
+<!ENTITY rmf_cachecaption.label "Cache für schnellen Browserstart">
 <!ENTITY rmf_btnsmenusaption.label "Schaltfläche / Datei-Menü">
 <!ENTITY rmf_confirmationcaption.label "Neustart bestätigen">
 <!ENTITY rmf_paneluibtn.label "Schaltfläche zu Menüleiste hinzufügen">
@@ -10,5 +10,5 @@
 <!ENTITY rmf_panelbtnsmall.label "Kleines Symbol für Menüleiste">
 <!ENTITY rmf_customizecaption.label "Schaltfläche anpassen">
 <!ENTITY rmf_custompuibuttoncolor.label "Anpassung in Menüleiste verwenden">
-<!ENTITY rmf_selectpuibuttoncolor.label "Hintergrundfarbe für Schaltfläche in Menüleiste">
+<!ENTITY rmf_selectpuibuttoncolor.label "Hintergrund für Schaltfläche in Menüleiste">
 <!ENTITY rmf_darkpuicon.label "Dunkle Symbolfarbe verwenden">
